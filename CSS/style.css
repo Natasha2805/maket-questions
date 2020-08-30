@@ -140,6 +140,10 @@ details summary::marker { display: none; }
 b {
     color: #E41579;
 }
+.col {
+    margin: 12px 0 39px 29px;
+    letter-spacing: -0.1px;
+}
 .question-detailed {
     margin-top: 10px;
 }

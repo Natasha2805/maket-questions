@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body {
+    margin: 0;
+    background:  #FFFFFF;
+}
+h1 {
+    margin: 150.5px 0 0 0;
+    padding-left: 488.6px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 130px;
+    text-transform: uppercase;
+    line-height: 151.7px;
+    letter-spacing: -0.2px;
+    color: #F6F6F6;
+}
+h2 {
+    margin-top: 13.1px;
+    margin-right: 247.3px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.2px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.question {
+    display: flex;
+}
+label {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #E41579;
+    cursor: pointer;
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 70px;
+    transition: transform 200ms;
+}
+label:before, label:after {
+    background-color: #E41579;
+    content: '';
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+label:before {
+    height: 2px;
+    width: 24px;
+    transition: width 200ms;
+}
+label:after {
+    height: 24px;
+    width: 2px;
+}
+input:not(:checked)+label:hover:before, input:not(:checked)+label:hover:after {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+input {
+    display: none;
+} 
+input:checked + label {
+    transform: rotate(45deg);
+    background: linear-gradient(180deg, #FF3F84 0%, #E41579 100%);
+}
+input:checked + label:before {
+    background-color: #FFFFFF;
+}
+input:checked + label:after {
+    background-color: #FFFFFF;
+}
+input:checked + label {
+    display: block;
+}
+.broccoli-img {
+    position: absolute;
+    width: 857.16px;
+    left: 821.47px;
+    top: 337.5px;
+    transform: rotate(360.1deg);
+}
+.icon-circle_plus {
+    margin-left: 241.4px;
+    margin-bottom: 45.7px;
+}
+h3 {
+    padding-left: 15px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #000000;
+}
+details {
+    margin-top: 0px;
+}
+details > summary {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 29px;
+    margin-top: 26px;
+    width: 111%;
+    letter-spacing: -0.3px;
+    outline: none;
+    color: #000000;
+  }
+details summary { list-style-type: none; } /* Firefox */
+details summary::-webkit-details-marker { display: none;} /* Chrome */
+details summary::marker { display: none; }
+.services {
+    margin-top: 75px;
+}
+.detailed-information {
+    margin: 25px 5px 5px 30px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    width: 35.6%;
+    letter-spacing: -0.2px;
+}
+b {
+    color: #E41579;
+}
+.question-detailed {
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 79.6px;
+        margin-top: 18.5%;
+        padding-left: 23.1%;
+    }
+    h2 {
+        font-size: 21.5px;
+        margin-top: 0.1%;
+        margin-right: 0;
+        padding-left: 1.1%;
+        line-height: 23px;
+        letter-spacing: -1.3px;
+    }
+    .broccoli-img {
+        width: 42.6%;
+        left: 61.2%;
+        top: 0.9%;
+    }
+    .icon-circle_plus {
+        margin: 0 0 0 10px;
+    }
+    details > summary {
+        margin: 26px 0 25px 29px;
+    }
+    .detailed-information {
+        letter-spacing: -0.3px;
+        margin: 0 0 12px 31px;
+        width: 81.4%;
+    }
+    details {
+        margin: 0 0 24px 0;
+    }
+    .services {
+        margin: 0 0 0 0;
+    }
+    .container-questions {
+        margin: 45px 0 0 0;
+    }
+    .question {
+        margin: 0 0 20.9px 0;
+    }
+    .detail {
+        margin: 0 0 -33px 0;
+    }
+}
+@media (max-width: 320px) {
+    h1 {
+        font-size: 28.4px;
+        margin-top: 44.6%;
+        padding-left: 25.8%;
+        letter-spacing: 1.6px;
+    }
+    h2 {
+        font-size: 20.5px;
+        line-height: 23px;
+        letter-spacing: -0.6px;
+        align-items: center;
+        text-align: center;
+        margin-top: -12.5%;
+    }
+    .broccoli-img {
+        width: 248.1px;
+        left: 104.3px;
+        top: 4.6px;
+        transform: rotate(60.2deg);
+    }
+    .icon-circle_plus {
+        margin: 0 0 0 10px;
+    }
+    details > summary {
+        margin: 4px 0 0px 20px;
+        width: 89.3%;
+        letter-spacing: -0.1px;
+        height: 65px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .detailed-information {
+        letter-spacing: -0.1px;
+        margin: 0px 0 12px 20px;
+        width: 88.1%;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+    details {
+        margin: 0;
+    }
+    .services {
+        margin: 0;
+    }
+    .container-questions {
+        margin: 48px 0 0 0;
+    }
+    .question {
+        margin: 0 0 44.9px 0;
+    }
+    .detail {
+        margin: 4px 0 -33px 0;
+    }
+    label {
+        width: 60px;
+        height: 60px;
+    }
+}

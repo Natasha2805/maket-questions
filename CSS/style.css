@@ -85,7 +85,7 @@ input:checked + label {
 }
 .broccoli-img {
     position: absolute;
-    width: 857.16px;
+    max-width: 100%;
     left: 821.47px;
     top: 337.5px;
     transform: rotate(360.1deg);
